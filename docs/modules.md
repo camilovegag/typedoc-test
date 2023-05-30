@@ -33,7 +33,7 @@ The sum of the two numbers.
 
 #### Defined in
 
-[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L7)
+[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L7)
 
 ___
 
@@ -58,7 +58,7 @@ The division result.
 
 #### Defined in
 
-[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L17)
+[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L17)
 
 ___
 
@@ -83,4 +83,4 @@ The product of the two numbers.
 
 #### Defined in
 
-[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L27)
+[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L27)
