@@ -9,6 +9,7 @@
 - [add](modules.md#add)
 - [divide](modules.md#divide)
 - [multiply](modules.md#multiply)
+- [subtract](modules.md#subtract)
 
 ## Functions
 
@@ -33,7 +34,7 @@ The sum of the two numbers.
 
 #### Defined in
 
-[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L7)
+[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L7)
 
 ___
 
@@ -58,7 +59,7 @@ The division result.
 
 #### Defined in
 
-[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L17)
+[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L27)
 
 ___
 
@@ -83,4 +84,29 @@ The product of the two numbers.
 
 #### Defined in
 
-[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/323b5f0/src/index.ts#L27)
+[index.ts:37](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L37)
+
+___
+
+### subtract
+
+▸ **subtract**(`x`, `y`): `number`
+
+Subtracts two numbers.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `number` | The number to subtract from. |
+| `y` | `number` | The number to subtract. |
+
+#### Returns
+
+`number`
+
+The difference between the two numbers.
+
+#### Defined in
+
+[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L17)
