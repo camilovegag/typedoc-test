@@ -1,0 +1,33 @@
+name: Github CI
+
+on: push
+
+jobs:
+  docs:
+    name: Generate Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
+          cache-dependency-path: ./yarn.lock
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install dependencies
+        shell: bash
+        run: yarn
+
+      - name: Build
+        shell: bash
+        run: yarn build
+
+      - name: Create docs
+        run: yarn docs
+
+      - name: Fix docs references
+        run: yarn fixReferences
