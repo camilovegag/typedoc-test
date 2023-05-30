@@ -25,5 +25,13 @@ jobs:
       - name: Create docs
         run: yarn docs
 
-      - name: Fix docs references
-        run: yarn fixReferences
+      - name: Test
+        shell: bash
+        run: pwd
+
+      # - name: Test2
+      #   shell: bash
+      #   run:
+
+      # - name: Fix docs references
+      #   run: yarn fixReferences
