@@ -4,7 +4,7 @@
  * @param {number} y - The second number to add.
  * @returns {number} The sum of the two numbers.
  */
-const add = (x: number, y: number): number => {
+export const add = (x: number, y: number): number => {
   return x + y;
 };
 
@@ -14,6 +14,17 @@ const add = (x: number, y: number): number => {
  * @param {number} y - The denominator.
  * @returns {number} The division result.
  */
-const divide = (x: number, y: number): number => {
+export const divide = (x: number, y: number): number => {
   return x / y;
 };
+
+/**
+ * Multiplies two numbers.
+ * @param {number} x - The first number.
+ * @param {number} y - The second number.
+ * @returns {number} The product of the two numbers.
+ */
+export const multiply = (x: number, y: number): number => {
+    return x * y;
+  };
+  
