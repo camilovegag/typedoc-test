@@ -1,5 +1,3 @@
-[typedoc-test](README.md) / Exports
-
 # typedoc-test
 
 ## Table of contents
@@ -34,7 +32,7 @@ The sum of the two numbers.
 
 #### Defined in
 
-[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L7)
+[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/main/src/index.ts#L7)
 
 ___
 
@@ -59,7 +57,7 @@ The division result.
 
 #### Defined in
 
-[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L27)
+[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/main/src/index.ts#L27)
 
 ___
 
@@ -84,7 +82,7 @@ The product of the two numbers.
 
 #### Defined in
 
-[index.ts:37](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L37)
+[index.ts:37](https://github.com/camilovegag/typedoc-test/blob/main/src/index.ts#L37)
 
 ___
 
@@ -109,4 +107,4 @@ The difference between the two numbers.
 
 #### Defined in
 
-[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/8e142ef/src/index.ts#L17)
+[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/main/src/index.ts#L17)
