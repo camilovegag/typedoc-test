@@ -8,6 +8,7 @@
 
 - [add](modules.md#add)
 - [divide](modules.md#divide)
+- [multiply](modules.md#multiply)
 
 ## Functions
 
@@ -32,7 +33,7 @@ The sum of the two numbers.
 
 #### Defined in
 
-index.ts:7
+[index.ts:7](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L7)
 
 ___
 
@@ -57,4 +58,29 @@ The division result.
 
 #### Defined in
 
-index.ts:17
+[index.ts:17](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L17)
+
+___
+
+### multiply
+
+▸ **multiply**(`x`, `y`): `number`
+
+Multiplies two numbers.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `number` | The first number. |
+| `y` | `number` | The second number. |
+
+#### Returns
+
+`number`
+
+The product of the two numbers.
+
+#### Defined in
+
+[index.ts:27](https://github.com/camilovegag/typedoc-test/blob/5a1d61f/src/index.ts#L27)
