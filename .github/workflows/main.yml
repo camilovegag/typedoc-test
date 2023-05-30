@@ -22,10 +22,6 @@ jobs:
         shell: bash
         run: yarn
 
-      - name: Build
-        shell: bash
-        run: yarn build
-
       - name: Create docs
         run: yarn docs
 
