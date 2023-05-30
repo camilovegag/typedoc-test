@@ -23,11 +23,13 @@ jobs:
         run: yarn
 
       - name: Create docs
-        run: yarn docs
+        run: |
+        yarn docs
+        ls
 
       - name: Test
         shell: bash
-        run: pwd
+        run: ls
 
       # - name: Test2
       #   shell: bash
