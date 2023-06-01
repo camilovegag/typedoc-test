@@ -34,6 +34,7 @@ jobs:
         run: yarn docs
 
       - name: Commit docs changes
+
         # only commit changes when not running via act and when on final branches
         # if: |
         #   (github.ref == 'refs/heads/master' ||
