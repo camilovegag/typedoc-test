@@ -28,7 +28,7 @@ jobs:
         run: yarn
 
       - name: Configure Git info
-        run: .github/scripts/config-git-info.sh
+        run: ./.github/scripts/config-git-info.sh
 
       - name: Create docs
         run: yarn docs
@@ -41,6 +41,6 @@ jobs:
         #    startsWith(github.ref, 'refs/heads/debug-docs/') ||
         #    startsWith(github.ref, 'refs/heads/release/')
         #   ) && !env.ACT
-        run: .github/scripts/commit-and-push-all-changes.sh
+        run: ./.github/scripts/commit-and-push-all-changes.sh
         env:
           HOPR_GIT_MSG: "Re-generate API docs for packages"
