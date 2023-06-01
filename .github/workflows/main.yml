@@ -27,30 +27,21 @@ jobs:
         shell: bash
         run: yarn
 
-      # - name: Configure Git info
-      #   run: ./.github/scripts/config-git-info.sh
+      - name: Configure Git info
+        run: ./.github/scripts/config-git-info.sh
 
       - name: Create docs
         run: yarn docs
 
-      # - name: Commit docs changes
+      - name: Commit docs changes
 
-      #   # only commit changes when not running via act and when on final branches
-      #   # if: |
-      #   #   (github.ref == 'refs/heads/master' ||
-      #   #    github.ref == 'refs/heads/avado' ||
-      #   #    startsWith(github.ref, 'refs/heads/debug-docs/') ||
-      #   #    startsWith(github.ref, 'refs/heads/release/')
-      #   #   ) && !env.ACT
-      #   run: ./.github/scripts/commit-and-push-all-changes.sh
-      #   env:
-      #     HOPR_GIT_MSG: "Re-generate API docs for packages"
-
-      - uses: actions/checkout@v3
-      - run: |
-          date > generated.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Re-generate API docs for packages"
-          git push
+        # only commit changes when not running via act and when on final branches
+        # if: |
+        #   (github.ref == 'refs/heads/master' ||
+        #    github.ref == 'refs/heads/avado' ||
+        #    startsWith(github.ref, 'refs/heads/debug-docs/') ||
+        #    startsWith(github.ref, 'refs/heads/release/')
+        #   ) && !env.ACT
+        run: ./.github/scripts/commit-and-push-all-changes.sh
+        env:
+          HOPR_GIT_MSG: "Re-generate API docs for packages"
