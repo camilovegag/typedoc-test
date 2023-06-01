@@ -1,6 +1,11 @@
 name: Github CI
 
-on: push
+env:
+  HOPR_GITHUB_REF: ${{ github.ref }}
+
+on:
+  push:
+    branches: ["ci"]
 
 jobs:
   docs:
@@ -22,18 +27,20 @@ jobs:
         shell: bash
         run: yarn
 
+      - name: Configure Git info
+        run: .github/scripts/config-git-info.sh
+
       - name: Create docs
-        run: |
-        yarn docs
-        ls
+        run: yarn docs
 
-      - name: Test
-        shell: bash
-        run: ls
-
-      # - name: Test2
-      #   shell: bash
-      #   run:
-
-      # - name: Fix docs references
-      #   run: yarn fixReferences
+      - name: Commit docs changes
+        # only commit changes when not running via act and when on final branches
+        # if: |
+        #   (github.ref == 'refs/heads/master' ||
+        #    github.ref == 'refs/heads/avado' ||
+        #    startsWith(github.ref, 'refs/heads/debug-docs/') ||
+        #    startsWith(github.ref, 'refs/heads/release/')
+        #   ) && !env.ACT
+        run: .github/scripts/commit-and-push-all-changes.sh
+        env:
+          HOPR_GIT_MSG: "Re-generate API docs for packages"
